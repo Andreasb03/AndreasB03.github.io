@@ -1,8 +1,16 @@
+/*
+	Name: Andreas Bountrogiannis
+	File: style.css
+	Date: 17 October 2023
+   part two of assignment 3
+*/
 html {
   font-family: sans-serif;
 }
 
-/* Your CSS below here */
+
+
+/* div with class "center" */
 .center{
  width: 200px;
  background-color: red; 
