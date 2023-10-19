@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     max-width: 980px;
   }
-  
+  /*grid class*/
   .grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -25,14 +25,14 @@ body {
     padding: 0 20px;
     max-width: 980px;
   }
-  
+  /*navbar should move with viewport*/
   nav {
     position: sticky;
     offset: 0;
     background-color: #000;
     padding: .5em;
   }
-  
+  /*flex box list*/
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,7 @@ body {
     padding: .5em 1em;
   }
   
+  /*image grid for the "photography" section*/
   .photos {
     display: grid;
     grid-gap: 1px;
@@ -57,6 +58,7 @@ body {
 
   }
 
+  /*the picture that the text wraps around, float left with margins to move the text away from the edges of the image*/
   .feature {
     float: left;
     margin-right: 10px;
