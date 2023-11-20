@@ -29,7 +29,7 @@ class Shape {
    } 
 
 }
-
+// evil ball 
 class EvilBall extends Shape{
    constructor(x,y, velX, velY,color, size) {
       super(x,y,20,20);
