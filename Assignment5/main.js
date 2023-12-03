@@ -1,13 +1,20 @@
 // functionality for showing/hiding the comments section
-
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
-showHideBtn.onclick = function() {
+showHideBtn.setAttribute('tabindex', '0'); // Make the button focusable
+// kb accessable 
+showHideBtn.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    showHideBtn.click();
+  }
+});
+
+showHideBtn.onclick = function () {
   let showHideText = showHideBtn.textContent;
-  if(showHideText === 'Show comments') {
+  if (showHideText === 'Show comments') {
     showHideBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
   } else {
